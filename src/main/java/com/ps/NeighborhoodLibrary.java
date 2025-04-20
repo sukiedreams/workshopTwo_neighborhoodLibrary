@@ -79,5 +79,12 @@ public class NeighborhoodLibrary {
         }
     }
 
-
+public static Book findBookById (int id) {
+        for (Book book : books) {
+            if (book.getId() == id) {
+                return book;
+            }
+        }
+        return null;
+}
 }
